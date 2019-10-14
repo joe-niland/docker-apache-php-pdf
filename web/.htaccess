@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+   Options +FollowSymLinks
+   Options +Indexes
+   RewriteEngine On
+
+   # only if not an actual file exist
+   RewriteCond %{REQUEST_FILENAME} !-f
+
+   # only if not an actual directory exist
+   RewriteCond %{REQUEST_FILENAME} !-d
+
+   RewriteRule (.+)\.pdf index.php?pdf [NC,L]
+</IfModule>
