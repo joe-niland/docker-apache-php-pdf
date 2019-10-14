@@ -1,6 +1,8 @@
 Demo: retrieve PDF file via PHP script
 =============================================
 
+This is a simple demo to answer the question here: https://stackoverflow.com/questions/58361967/how-to-block-access-to-directory-if-user-is-not-logged-in/
+
 Usage
 ---------
 
