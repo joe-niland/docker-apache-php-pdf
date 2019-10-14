@@ -9,5 +9,5 @@
    # only if not an actual directory exist
    RewriteCond %{REQUEST_FILENAME} !-d
 
-   RewriteRule (.+)\.pdf index.php?pdf [NC,L]
+   RewriteRule (.+)\.pdf index.php?pdf=$1 [NC,L]
 </IfModule>
